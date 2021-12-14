@@ -1,0 +1,167 @@
+/* PROPIEDADES */
+/* DESKTOP */
+@media(min-width: 1024px){
+
+.gridcontenedorpadrepropiedades {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 200px 1fr 200px;
+}
+// agregamos map-get 
+$paletaColores: (
+	blanco: white,
+	secundario: darkslategrey,
+	negro: black,
+	);
+// aplicamos mixin
+@mixin sizes($width, $height) {
+	height: $height;
+	width: $width;
+}
+.propiedades__title {
+	font-size: 60px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: map-get($paletaColores,blanco);
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	@include sizes(100%, 300px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.textopropForm {
+	font-size: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 4px;
+	color: map-get($paletaColores,secundario);
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 1px 2px 3px black;
+	transition: all 0.5s;
+}
+// aplicando extend
+.textopropForm--aceptar {
+	@extend .textopropForm;
+	color: darkgreen;
+}
+.textopropForm:hover {
+	font-size: 25px;
+	color: black;
+	font-weight: bold
+}
+.tituloprop {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	padding-top: 40px;
+	font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 5px black;
+} 
+.contenedorform {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	height: 150px;
+}
+.contenedormain {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: rgba(0,0,0,0.6)  url(../images/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+}
+.contenedorimg {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.prop__imgv2 {
+	margin: 40px;
+	border-style: ridge;
+	width: 300px;
+}
+}
+/* MOBILE */
+/* header */
+@media(max-width: 768px) {
+.propiedades__title {
+	font-size: 40px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tituloprop {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	padding-top: 40px;
+	font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 5px black;
+}
+.textopropForm {
+	font-size: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 4px;
+	color: darkslategrey;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 15px;
+	box-shadow: 1px 2px 3px black;
+}
+.contenedorform {
+	background-image: url(../images/backgroundimagemobile.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.busquedapropiedadespageform {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.contenedormain {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: rgba(0,0,0,0.6)  url(../images/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	justify-content: center;
+}
+.contenedorimg {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.prop__imgv2 {
+	margin: 56px;
+	border-style: ridge;
+	width: 300px;
+}
+}

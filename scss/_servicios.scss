@@ -1,0 +1,124 @@
+/* SERVICIOS */
+/* DESKTOP */
+@media(min-width: 1024px){
+	.gridcontenedorpadreservicios {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 200px 1fr 200px;
+}
+.serviciosempresa {
+	margin-top: 30px;
+}
+.servicios__title {
+	font-size: 60px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.paragraphservicios {
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+.subtitles {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.serviciosempresa {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.nosocupamos {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 55px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 4px;
+	background: darkgrey;
+}
+.relajate {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 40px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 4px;
+	background: darkgrey;
+}
+.contenidoextra {
+	margin-top: 50px;
+}
+}
+/* MOBILE */
+@media(max-width: 768px) {
+.serviciosempresa {
+	margin-top: 30px;
+}
+.servicios__title {
+	font-size: 50px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.paragraphservicios {
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+.subtitles {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.serviciosempresa {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.nosocupamos {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 55px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 4px;
+	background: darkgrey;
+}
+.relajate {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 40px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 4px;
+	background: darkgrey;
+}
+.contenidoextra {
+	margin-top: 50px;
+}
+}

@@ -1,0 +1,137 @@
+.navbar .logo {
+	width: 180px;
+}
+.logo {
+	transition: all 1s;
+}
+@media (min-width: 1024px) {
+.logo:hover {
+	transform: translateY(-20px);
+}
+.nav-item{
+	transition: all 1s;
+}
+.nav-item:hover {
+	transform: translateY(-5px);
+}
+.textoForm:hover {
+	font-size: 25px;
+	color: black;
+	font-weight: bold
+}
+.textoFormdos:hover {
+	font-size: 25px;
+	color: black;
+	font-weight: bold
+}
+.rrss a {
+	transition: all 1s;
+}
+.rrss a:hover{
+	transform: translateY(-20px);
+	font-size: 50px;
+}
+}
+ul {
+	li {
+	list-style-type: none;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	padding: 3px 29px;
+	margin: 14px;
+		a {
+		text-decoration: none;
+		font-family: 'Oswald', sans-serif;
+    	color: #4C443C;
+    	font-size: 30px;
+		cursor: pointer;
+		}
+	}
+
+}
+/* contenido */
+.busquedapropiedades {
+	background-image: url(../images/fondociudad.jpg);
+	height: 800px;
+	background-position: center;
+	background-size: cover;
+}
+.textoForm {
+	font-size: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 4px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 1px 2px 3px black;
+	transition: all 0.5s;
+}
+@media (max-width: 768px) {
+	.busquedapropiedades__form {
+	display: flex;
+	flex-direction: column;
+}
+.textoForm {
+	font-size: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 3px;
+	margin: 10px;
+	color: darkslategrey;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 1px 2px 3px black;
+}
+.row {
+	.rrss {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	}
+}
+}
+.propiedadesdestacadas__titulo {
+	font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 5px black;
+}
+.bgfondo {
+	background: rgba(0,0,0,0.6)  url(../images/backgroundestacadas.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	height: 60%;
+}
+.prop__img {
+	width: 300px;
+	border-style: ridge;
+}
+/* footer  */
+.logofooter__img {
+	width: 150px;
+	padding-left: 15px;
+}
+.row div h2 a {
+	font-family: 'Rubik', sans-serif;
+	color: darkslategrey;
+	font-size: 25px;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+.rrss {
+	a {
+	text-decoration: none;
+	line-height: 5px;
+	color: darkslategrey;
+	font-size: 45px;
+	}
+}
+.row .copyright h4 {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 25px;
+	color: darkslategrey;
+}
+.footerbs {
+	height: 200px;
+}

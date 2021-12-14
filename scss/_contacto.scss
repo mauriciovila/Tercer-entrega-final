@@ -1,0 +1,158 @@
+/* CONTACTO */
+/* DESKTOP */
+@media(min-width: 1024px){
+.gridcontenedorpadrecontacto {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"section"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 200px 1fr 200px;
+}
+.contacto__title {
+	font-size: 60px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contenedorformulariocontacto {
+	width: 500px;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 7px;
+	align-content: center;
+}
+.backgroundcontacto {
+	display: flex;
+	background: rgba(0,0,0,0.6) url(../images/backgroundcontacto.jpg);
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: darken;
+}
+input, textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	font-size: 20px;
+	font-family: 'Rubik', sans-serif;
+}
+.datoscontactoempresa {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 100%;
+}
+.datoscontactoempresa h3 {
+	font-size: 70px;
+	color: white;
+	font-family: 'Nanum Gothic', sans-serif;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+.descripcioncontacto {
+	font-size: 20px;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+}
+.iconos {
+	display: flex;
+	padding-top: 30px;
+	width: 100%;
+	justify-content: center;
+}
+.icono {
+	margin: 0px 30px;
+	transition: all	1s;
+}
+.icono:hover {
+	transform: translateY(-25px);
+}
+.iconos i{
+	font-size: 80px;
+	color: white;
+}
+}
+/* MOBILE */
+@media(max-width: 768px) {
+.contacto__title {	
+	font-size: 60px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contenedorformulariocontacto {
+	background: rgba(0, 0, 0, 0.4);
+	padding: 10px 20px;
+	margin: 20px;
+	border-radius: 7px;
+	align-content: center;
+}
+.backgroundcontacto {
+	display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0,0.6) url(../images/backgroundcontacto.jpg);
+	height: 600px;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: darken;
+}
+input, textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	font-size: 15px;
+	font-family: 'Rubik', sans-serif;
+}
+.datoscontactoempresa {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+	width: 100%;
+}
+.datoscontactoempresa h3 {
+	font-size: 30px;
+	color: white;
+	font-family: 'Nanum Gothic', sans-serif;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	text-align: center;
+}
+.descripcioncontacto {
+	font-size: 15px;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+}
+.iconos {
+	padding-top: 30px;
+}
+.iconos i{
+	font-size: 50px;
+	color: white;
+}
+}

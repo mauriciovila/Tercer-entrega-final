@@ -1,0 +1,263 @@
+/* NOSOTROS */
+/* DESKTOP */
+@media(min-width: 1024px){
+.gridcontenedorpadrenosotros {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"section"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 200px 1fr 200px;
+}
+// agregamos map-get
+$alinearcentro: (
+	centro: center,
+	);
+.nosotros__title {
+	font-size: 60px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: map-get($alinearcentro,centro);
+	background-size: cover;
+	height: 300px;
+	display: flex;
+	align-items: map-get($alinearcentro,centro);
+	justify-content: map-get($alinearcentro,centro);
+}
+section .quienessomos {
+	font-family: 'Rubik', sans-serif;
+	font-size: 40px;
+	text-align: map-get($alinearcentro,centro);
+	padding: 35px;
+}
+
+.paragraph {
+	font-size: 20px;
+	font-family: 'Rubik', sans-serif;
+	color: black;
+	text-align: justify center;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.mision {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	text-align: center;
+	align-self: center;
+	padding: 35px;
+}
+.vision {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	text-align: center;	
+	padding: 35px;
+}
+.paragraphuno {
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: justify;	
+}
+.contenedorcontenido {
+	display: flex;
+	justify-content: space-around;
+}
+.contenedoruno {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.contenedordos {
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.equipotrabajo {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	color: black;
+	text-align: center;
+	padding: 35px;
+}
+.equipotrabajo__text {
+	font-size: 20px;
+	font-family: 'Rubik', sans-serif;
+	color: black;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.nombres {
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+.integrantesequipo {
+	padding-top: 20px;
+}
+}
+/* MOBILE */
+/* header */
+@media(max-width: 768px){
+.contenedorheader {
+	display: flex;
+	flex-direction: column;
+}
+header .navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar .logo{
+	width: 180px;
+}
+.navbar .menu-bar {
+	align-items: center;
+	font-size: 4em;
+	cursor: pointer;
+	padding: 30px;
+}
+/* main */
+.nosotros__title {
+	font-size: 60px;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	background-image: url(../images/nosotrosbanner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+section .quienessomos {
+	font-family: 'Rubik', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	padding: 35px;
+}
+
+.paragraph {
+	font-size: 20px;
+	font-family: 'Rubik', sans-serif;
+	color: black;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.mision {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	text-align: center;
+	align-self: center;
+	padding: 35px;
+}
+.vision {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	text-align: center;	
+	padding: 35px;
+}
+.paragraphuno {
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 30px;	
+}
+.contenedorcontenido {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.contenedoruno {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 10px;
+}
+.contenedordos {
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+.equipotrabajo {
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	color: black;
+	text-align: center;
+	padding: 35px;
+}
+.equipotrabajo__text {
+	font-size: 20px;
+	font-family: 'Rubik', sans-serif;
+	color: black;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.nombres {
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+.integrantesequipo {
+	padding-top: 20px;
+}
+/* footer */
+.footer {
+	padding-left: 20px;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+.logofooter__img {
+	width: 150px;
+}
+.footer h2 a {
+	font-family: 'Rubik', sans-serif;
+	color: darkslategrey;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.footer .rrss {
+	display: flex;
+	padding: 30px;
+}
+.footer .rrss a {
+	text-decoration: none;
+	line-height: 5px;
+	color: darkslategrey;
+	font-size: 40px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.copyright {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 25px;
+	color: darkslategrey;
+	padding-right: 20px;
+	text-align: center;
+}
+}

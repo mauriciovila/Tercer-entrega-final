@@ -1,0 +1,322 @@
+/* DESKTOP */
+@media(min-width: 1024px){
+.gridcontenedorpadre {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 200px 1fr 200px;
+}
+header {
+	padding: 20px;
+	grid-area: header;
+}
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+}
+.barranav {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	align-items: center;
+}
+.barranav .logo {
+	width: 180px;
+	grid-column: 1 / 2;
+}
+.logo {
+	transition: all 1s;
+}
+.logo:hover {
+	transform: translateY(-20px);
+}
+.menu {
+	grid-column: 4 / 10;
+	display: flex;
+	justify-content: space-around;
+}
+li {
+	transition: all 1s;
+}
+li:hover {
+	transform: translateY(-5px);
+}
+.barranav .menu li {
+	list-style-type: none;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	padding: 10px 35px;
+	margin: 14px;
+}
+.barranav .menu a {
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+    color: #4C443C;
+    font-size: 30px;
+	cursor: pointer;
+}
+/* section main */
+section .busquedapropiedades {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../images/fondociudad.jpg);
+	height: 800px;
+	background-position: center;
+	background-size: cover;
+}
+.textoForm {
+	font-size: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 4px;
+	background-color: whitesmoke;
+	color: darkslategrey;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 1px 2px 3px black;
+	transition: all 0.5s;
+}
+.textoForm:hover {
+	font-size: 25px;
+	color: black;
+	font-weight: bold
+}
+.propiedadesdestacadas__titulo {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 40px;
+	font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 5px black;
+}
+.propiedadesdestacadas__img {
+	display: flex;
+	justify-content: space-around;
+}
+.prop__img {
+	margin: 56px;
+	border-style: ridge;
+	width: 300px;
+}
+.propiedadesdestacadas__descripcion {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Rubik', sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+.backgroundestacadas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: rgba(0,0,0,0.6)  url(../images/backgroundestacadas.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+}
+/* footer  */
+.footer {
+	padding-left: 20px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logofooter__img {
+	width: 150px;
+	transition: all 1s;
+}
+.logofooter__img:hover {
+	transform: translateY(-20px);
+}
+.footer .redes {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	justify-items: center;
+}
+.footer h2 a {
+	font-family: 'Rubik', sans-serif;
+	color: darkslategrey;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+.footer .redes a {
+	text-decoration: none;
+	width: 10px;
+	height: 10px;
+	line-height: 5px;
+	color: darkslategrey;
+	font-size: 45px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.redes a {
+	transition: all 1s;
+}
+.redes a:hover{
+	transform: translateY(-20px);
+	font-size: 50px;
+}
+.copyright {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 25px;
+	color: darkslategrey;
+	padding-right: 20px;
+}
+}
+/* MOBILE */
+/* header */
+@media(max-width: 768px){
+.contenedorheader {
+	display: flex;
+	flex-direction: column;
+}
+header .barranav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.barranav .logo{
+	width: 180px;
+}
+.barranav .menu li {
+	list-style-type: none;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	padding: 10px 35px;
+	margin: 10px;
+	text-align: center;
+}
+.barranav .menu a {
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+    color: #4C443C;
+    font-size: 15px;
+}
+
+/* section main */
+section .busquedapropiedades {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../images/fondociudad.jpg);
+	height: 900px;
+	background-position: center;
+	background-size: cover;
+}
+.busquedapropiedades__form {
+	display: flex;
+	flex-direction: column;
+}
+.textoForm {
+	font-size: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 3px;
+	margin: 10px;
+	background-color: whitesmoke;
+	color: darkgrey;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 1px 2px 3px black;
+}
+.propiedadesdestacadas__titulo {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	padding-top: 40px;
+	font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 5px black;
+}
+.backgroundestacadas {
+	display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0,0.6)  url(../images/backgroundestacadas.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	grid-area: background;
+}
+.propiedadesdestacadas__img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	margin: 10px;
+}
+.prop__img {
+	margin: 10px;
+	border-style: ridge;
+	width: 100%;
+}
+.propiedadesdestacadas__descripcion {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+	grid-area: text;
+}
+.propiedadesdestacadas__descripcion p{
+	text-align: center;
+	margin: 10px;
+}
+/* footer */
+.footer {
+	padding-left: 20px;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+.logofooter__img {
+	width: 150px;
+}
+.footer h2 a {
+	font-family: 'Rubik', sans-serif;
+	color: darkslategrey;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.footer .redes {
+	display: flex;
+	padding: 30px;
+}
+.footer .redes a {
+	text-decoration: none;
+	line-height: 5px;
+	color: darkslategrey;
+	font-size: 40px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.copyright {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 25px;
+	color: darkslategrey;
+	padding-right: 20px;
+	text-align: center;
+}
+}
